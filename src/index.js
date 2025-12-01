@@ -173,11 +173,6 @@ client.on('presenceUpdate',async (oldpresence,newpresence) => {
     }
 })
 
-client.on('messageCreate',(message) => {
-    if(message.author.bot) return
-    getSheetdata(true)
-})
-
 client.on('voiceStateUpdate',async (oldstate,newstate) => {
     //check if user join a channel
     if(textchannelid !== ""){
