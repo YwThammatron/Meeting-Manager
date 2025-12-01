@@ -158,7 +158,7 @@ client.on('clientReady',async (c) => {
         }
     }
 
-    getSheetdata(true)
+    getSheetdata(false)
 })
 
 client.on('presenceUpdate',async (oldpresence,newpresence) => {
