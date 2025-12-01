@@ -99,7 +99,7 @@ const printMode = async (mode) => {
         channel.send(new Date().toLocaleDateString() + " - " + total + " --> " + (total+datas.news.length) + " Meeting Issues")
         channel.send("New Issues")
         for(let content of datas.news){
-            channel.send("- Issue " + content[1] + " : " + content[2])
+            channel.send("- Issue " + content[0] + " : " + content[2])
         }
     } 
 }
@@ -162,14 +162,14 @@ client.on('clientReady',async (c) => {
 })
 
 client.on('presenceUpdate',async (oldpresence,newpresence) => {
+    const channel = await client.channels.fetch(textchannelid)
     if(newpresence.status == "online"){
         getSheetdata(true)
-
-        const channel = await client.channels.fetch(textchannelid)
         channel.send("hello " + newpresence.member.user.globalName)
     }
     else if(newpresence.status == "offline"){
         getSheetdata(true)
+        channel.send("goodbye " + newpresence.member.user.globalName)
     }
 })
 
