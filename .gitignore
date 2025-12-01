@@ -1,6 +1,5 @@
 # secrets
 *.env
-/src/config.json
 
 # build flow
 /node_modules
