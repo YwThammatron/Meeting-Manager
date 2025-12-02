@@ -2,6 +2,7 @@
 
 Tools and Languages
 - Javascript
+- Discord.js library
   
 **Main Requirement**
 - Report current meeting issues when user is online or join a voice channel (start meeting)
