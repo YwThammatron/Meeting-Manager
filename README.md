@@ -22,4 +22,4 @@ Prerequisites
 - Discord bot with its token
 
 Example Google Spreadsheet for this repository 
-https://docs.google.com/spreadsheets/d/1nBQSJHmtEmW8k9RIZTDls7pXAa7RN0sR5YQVITaQDjw/edit?gid=0#gid=0
+https://docs.google.com/spreadsheets/d/1nUYKe3TQVF-icZvRV76nhsnls7MAyHyo7Zzj-RqVRhM/edit?gid=0#gid=0
